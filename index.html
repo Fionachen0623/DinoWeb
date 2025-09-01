@@ -1,10 +1,10 @@
-
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
     <title>DinoGame Demo</title>
-    <script src="https://cjrtnc.leaningtech.com/3.0/loader.js"></script>
+
+    <script src="https://cjrtnc.leaningtech.com/4.2/loader.js"></script>
 </head>
 <body>
     <h1>DinoGame Demo</h1>
@@ -12,11 +12,16 @@
     <pre id="output"></pre>
 
     <script>
-        cheerpjInit();
+        // 初始化 CheerpJ，加载当前目录的文件
+        cheerpjInit({appPrefix: "."});
+
+        // 捕获 Java 输出到页面
         cheerpjAddPrintCallback(function(text){
             const pre = document.getElementById("output");
             pre.textContent += text + "\n";
         });
+
+        // 运行 DinoGame 主类
         function runGame() {
             cheerpjRunMain("DinoGame", "DinoGame.jar");
         }
