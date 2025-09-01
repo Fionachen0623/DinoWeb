@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>DinoGame Demo</title>
+    <!-- CheerpJ 4.2 loader -->
     <script src="https://cjrtnc.leaningtech.com/4.2/loader.js"></script>
 </head>
 <body>
@@ -11,6 +12,7 @@
     <pre id="output"></pre>
 
     <script>
+        // 标记 CheerpJ 是否初始化完成
         let cheerpjReady = false;
 
         // 初始化 CheerpJ
@@ -18,17 +20,29 @@
             console.log("✅ CheerpJ 已初始化");
             cheerpjReady = true;
 
-            cheerpjAddPrintCallback(function(text){
-                document.getElementById("output").textContent += text + "\n";
-            });
+            // 捕获 Java 输出
+            if (window.CheerpJ && CheerpJ.addPrintCallback) {
+                CheerpJ.addPrintCallback(function(text) {
+                    document.getElementById("output").textContent += text + "\n";
+                });
+            } else {
+                console.warn("⚠️ CheerpJ runtime 未加载成功");
+            }
+        }).catch(err => {
+            console.error("❌ CheerpJ 初始化失败", err);
         });
 
+        // 点击按钮运行游戏
         function runGame() {
             if (!cheerpjReady) {
                 alert("CheerpJ 正在初始化，请稍等...");
                 return;
             }
-            cheerpjRunMain("DinoGame", "DinoGame.jar");
+            try {
+                cheerpjRunMain("DinoGame", "DinoGame.jar");
+            } catch(e) {
+                console.error("运行 DinoGame 出错", e);
+            }
         }
     </script>
 </body>
