@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>DinoGame Demo</title>
+    <script src="https://cjrtnc.leaningtech.com/3.0/loader.js"></script>
+</head>
+<body>
+    <h1>DinoGame Demo</h1>
+    <button onclick="runGame()">运行 DinoGame</button>
+    <pre id="output"></pre>
+
+    <script>
+        cheerpjInit();
+        cheerpjAddPrintCallback(function(text){
+            const pre = document.getElementById("output");
+            pre.textContent += text + "\n";
+        });
+        function runGame() {
+            cheerpjRunMain("DinoGame", "DinoGame.jar");
+        }
+    </script>
+</body>
+</html>
