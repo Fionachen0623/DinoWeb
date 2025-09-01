@@ -1,35 +1,51 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>DinoGame Demo</title>
-    <script src="https://cjrtnc.leaningtech.com/3.0/loader.js"></script>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2487.5">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000; min-height: 14.0px}
+    span.s1 {font-kerning: none}
+  </style>
 </head>
 <body>
-    <h1>DinoGame Demo</h1>
-    <button onclick="runGame()">运行 DinoGame</button>
-    <pre id="output"></pre>
-
-    <script>
-        // 初始化 CheerpJ
-        cheerpjInit().then(() => {
-            console.log("✅ CheerpJ 已初始化");
-
-            // 注册输出回调
-            cheerpjAddPrintCallback(function(text){
-                const pre = document.getElementById("output");
-                pre.textContent += text + "\n";
-            });
-        });
-
-        // 运行游戏函数
-        function runGame() {
-            // 确保 CheerpJ 初始化完成后再运行
-            cheerpjInit().then(() => {
-                cheerpjRunMain("DinoGame", "DinoGame.jar");
-            });
-        }
-    </script>
+<p class="p1"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
+<p class="p1"><span class="s1">&lt;html&gt;</span></p>
+<p class="p1"><span class="s1">&lt;head&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;title&gt;DinoGame Demo&lt;/title&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;script src="https://cjrtnc.leaningtech.com/3.0/loader.js"&gt;&lt;/script&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/head&gt;</span></p>
+<p class="p1"><span class="s1">&lt;body&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;h1&gt;DinoGame Demo&lt;/h1&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;button onclick="runGame()"&gt;运行 DinoGame&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;pre id="output"&gt;&lt;/pre&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;script&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// 初始化 CheerpJ</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>cheerpjInit().then(() =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>console.log("✅ CheerpJ 已初始化");</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>// 注册输出回调</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>cheerpjAddPrintCallback(function(text){</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>const pre = document.getElementById("output");</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>pre.textContent += text + "\n";</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>});</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>});</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// 运行游戏函数</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>function runGame() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>// 确保 CheerpJ 初始化完成后再运行</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>cheerpjInit().then(() =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>cheerpjRunMain("DinoGame", "DinoGame.jar");</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>});</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/body&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/html&gt;</span></p>
 </body>
 </html>
-
