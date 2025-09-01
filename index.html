@@ -1,49 +1,35 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html>
 <html>
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2487.5">
-  <style type="text/css">
-    p.p3 {margin: 0.0px 0.0px 12.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000; min-height: 14.0px}
-    span.s1 {font-kerning: none}
-    span.s2 {font: 12.0px 'Songti SC'; font-kerning: none}
-  </style>
+    <meta charset="UTF-8">
+    <title>DinoGame Demo</title>
+    <script src="https://cjrtnc.leaningtech.com/4.2/loader.js"></script>
 </head>
 <body>
-<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b>&lt;!DOCTYPE html&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b>&lt;html&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b>&lt;head&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;title&gt;DinoGame Demo&lt;/title&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;!-- </b></span><span class="s2"><b>建议用最新的</b></span><span class="s1"><b> 4.2 --&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;script src="https://cjrtnc.leaningtech.com/4.2/loader.js"&gt;&lt;/script&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b>&lt;/head&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b>&lt;body&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;h1&gt;DinoGame Demo&lt;/h1&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;button onclick="runGame()"&gt;</b></span><span class="s2"><b>运行</b></span><span class="s1"><b> DinoGame&lt;/button&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;pre id="output"&gt;&lt;/pre&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000; min-height: 14.0px"><span class="s1"></span><br></h1>
-<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;script&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>// </b></span><span class="s2"><b>初始化</b></span><span class="s1"><b> CheerpJ</b></span><span class="s2"><b>，加载当前目录的文件</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>cheerpjInit({appPrefix: "."});</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000; min-height: 14.0px"><span class="s1"></span><br></h1>
-<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>// </b></span><span class="s2"><b>捕获</b></span><span class="s1"><b> Java </b></span><span class="s2"><b>输出到页面</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>cheerpjAddPrintCallback(function(text){</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">            </span>const pre = document.getElementById("output");</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">            </span>pre.textContent += text + "\n";</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>});</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000; min-height: 14.0px"><span class="s1"></span><br></h1>
-<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>// </b></span><span class="s2"><b>运行</b></span><span class="s1"><b> DinoGame </b></span><span class="s2"><b>主类</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>function runGame() {</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">            </span>cheerpjRunMain("DinoGame", "DinoGame.jar");</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>}</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;/script&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b>&lt;/body&gt;</b></span></h1>
-<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b>&lt;/html&gt;</b></span></h1>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p3"><span class="s1"></span><br></p>
+    <h1>DinoGame Demo</h1>
+    <button onclick="runGame()">运行 DinoGame</button>
+    <pre id="output"></pre>
+
+    <script>
+        let cheerpjReady = false;
+
+        // 初始化 CheerpJ
+        cheerpjInit({ appPrefix: "https://fionachen0623.github.io/DinoWeb/" }).then(() => {
+            console.log("✅ CheerpJ 已初始化");
+            cheerpjReady = true;
+
+            cheerpjAddPrintCallback(function(text){
+                document.getElementById("output").textContent += text + "\n";
+            });
+        });
+
+        function runGame() {
+            if (!cheerpjReady) {
+                alert("CheerpJ 正在初始化，请稍等...");
+                return;
+            }
+            cheerpjRunMain("DinoGame", "DinoGame.jar");
+        }
+    </script>
 </body>
 </html>
